@@ -1,1 +1,6 @@
 # CS-330-Final-Project
+Pseudocode. Write pseudocode for an algorithm that produces a list of n random, unique integers, using the format and conventions used in your text. The range of possible values is 4n wide — so a list of 25 integers draws from 1 to 100 inclusive. You may assume a random-number function such as the linear congruential generator in java.util.Random, but you must remove the duplicates yourself. A Set would do this for you in Java; writing it yourself is the point, because the cost of that choice is part of your analysis. Describe your algorithm in prose as well as in pseudocode.
+
+Working Java code. Implement the generator as a class that can produce any n with a constructor or variable change. Use a plain array rather than ArrayList. Show your code and its output for 25 randomly distributed unique integers.
+
+Analysis. Determine the asymptotic efficiency class of your generator. You may assume Java's random-number call is Θ(1) for a single value and O(n) for n values. Account for the cost of your duplicate removal — that is where the interesting behavior comes from. Show the reasoning that gets you to your efficiency class, not just the answer. Use the formal mathematics in your discussion
