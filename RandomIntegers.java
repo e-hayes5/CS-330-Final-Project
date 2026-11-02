@@ -24,7 +24,21 @@ public class RandomIntegers{
                 }
             }
         }
+        int comparisons=0;
+        for(int i=0;i<=n-2;i++){
+            int min=i;
+            for(int j=i+1; j<=n-1;j++){
+                comparisons++;
+                if(A[j]< A[min]){
+                    min = j;
+                }
+            }
+            int temp = A[i];
+            A[i] = A[min];
+            A[min] = temp;   
+        }
     System.out.println(Arrays.toString(A));
+    System.out.println("Basic Operation Count: " + comparisons);
     scanner.close();
  }
 }
